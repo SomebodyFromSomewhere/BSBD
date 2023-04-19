@@ -186,13 +186,20 @@ namespace BSBD
             {
                 malfunctionComboBox.Items.Clear();
                 malfunctionComboBox.SelectedIndex = -1;
+                malfunctionComboBox.SelectedItem = null;
+                malfunctionComboBox.SelectedValue = "";
+                malfunctionComboBox.Text = "";
                 return;
             }
 
-            if (malfunctionComboBox.SelectedIndex == -1)
+            if (malfunctionComboBox.SelectedIndex == -1 || ((Control)sender).Name == deviceComboBox.Name)
             {
                 DataRow[] malfuntions = repairMethods.Select("device_name = '" + deviceComboBox.Text + "'");
                 malfunctionComboBox.Items.Clear();
+                malfunctionComboBox.SelectedIndex = -1;
+                malfunctionComboBox.SelectedItem = null;
+                malfunctionComboBox.SelectedValue = "";
+                malfunctionComboBox.Text = "";
                 foreach (var malfunction in malfuntions)
                 {
                     malfunctionComboBox.Items.Add(malfunction.Field<string>("repair_type"));
