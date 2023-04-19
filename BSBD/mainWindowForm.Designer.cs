@@ -35,6 +35,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.orderListBox = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.errorLabel = new System.Windows.Forms.Label();
             this.malfunctionComboBox = new System.Windows.Forms.ComboBox();
             this.deviceComboBox = new System.Windows.Forms.ComboBox();
@@ -49,7 +50,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.successLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -115,6 +116,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.successLabel);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.errorLabel);
             this.panel3.Controls.Add(this.malfunctionComboBox);
@@ -134,6 +136,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(409, 498);
             this.panel3.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(137, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Дата завершения заказа";
             // 
             // errorLabel
             // 
@@ -261,14 +272,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Название товара";
             // 
-            // label6
+            // successLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(137, 283);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Дата завершения заказа";
+            this.successLabel.AutoSize = true;
+            this.successLabel.ForeColor = System.Drawing.Color.Green;
+            this.successLabel.Location = new System.Drawing.Point(14, 373);
+            this.successLabel.Name = "successLabel";
+            this.successLabel.Size = new System.Drawing.Size(0, 13);
+            this.successLabel.TabIndex = 14;
             // 
             // mainWindowForm
             // 
@@ -314,6 +325,7 @@
         private System.Windows.Forms.ComboBox deviceComboBox;
         private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label successLabel;
     }
 }
 

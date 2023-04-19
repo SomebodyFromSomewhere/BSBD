@@ -49,6 +49,7 @@ namespace BSBD
                 }
             }
             orderListBox.SelectedIndex = selectedIndex;
+            successLabel.Text = string.Empty;
         }
 
         private void orderListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -181,6 +182,7 @@ namespace BSBD
             main.dataBase.UpdateRecord("repair_works", repairValues, repairWorkWhereValues);
 
             update(orderListBox.SelectedIndex);
+            successLabel.Text = "Сохранено";
         }
 
         private void cost_update(object sender, EventArgs e)
