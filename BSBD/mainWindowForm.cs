@@ -165,7 +165,10 @@ namespace BSBD
                 update(orderListBox.SelectedIndex);
                 return;
             }
-
+            if (masterComboBox.SelectedIndex == -1)
+            {
+                masterComboBox.SelectedIndex = 0;
+            }
             string masterId = masters.Rows[masterComboBox.SelectedIndex].Field<uint>("id").ToString();
             List<Tuple<string, string>> repairValues = new List<Tuple<string, string>> {
                 new Tuple<string, string>("product_name", deviceComboBox.SelectedItem.ToString()),
