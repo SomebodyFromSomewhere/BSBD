@@ -71,6 +71,12 @@
     <Compile Include="addRepairMethodForm.Designer.cs">
       <DependentUpon>addRepairMethodForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="changeMethodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeMethodsForm.Designer.cs">
+      <DependentUpon>changeMethodsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="mainWindowForm.cs">
       <SubType>Form</SubType>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addRepairMethodForm.resx">
       <DependentUpon>addRepairMethodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeMethodsForm.resx">
+      <DependentUpon>changeMethodsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainWindowForm.resx">
       <DependentUpon>mainWindowForm.cs</DependentUpon>

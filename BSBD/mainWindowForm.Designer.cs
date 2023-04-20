@@ -30,11 +30,12 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.updateButton = new System.Windows.Forms.Button();
-            this.devButton = new System.Windows.Forms.Button();
+            this.addMasterButton = new System.Windows.Forms.Button();
             this.addOrderButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.orderListBox = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.successLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.errorLabel = new System.Windows.Forms.Label();
             this.malfunctionComboBox = new System.Windows.Forms.ComboBox();
@@ -50,7 +51,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.successLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -59,7 +59,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.updateButton);
-            this.panel1.Controls.Add(this.devButton);
+            this.panel1.Controls.Add(this.addMasterButton);
             this.panel1.Controls.Add(this.addOrderButton);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -76,15 +76,15 @@
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
-            // devButton
+            // addMasterButton
             // 
-            this.devButton.Location = new System.Drawing.Point(670, 3);
-            this.devButton.Name = "devButton";
-            this.devButton.Size = new System.Drawing.Size(125, 23);
-            this.devButton.TabIndex = 10;
-            this.devButton.Text = "DEV";
-            this.devButton.UseVisualStyleBackColor = true;
-            this.devButton.Click += new System.EventHandler(this.devButton_Click);
+            this.addMasterButton.Location = new System.Drawing.Point(670, 3);
+            this.addMasterButton.Name = "addMasterButton";
+            this.addMasterButton.Size = new System.Drawing.Size(125, 23);
+            this.addMasterButton.TabIndex = 10;
+            this.addMasterButton.Text = "Добавить мастера";
+            this.addMasterButton.UseVisualStyleBackColor = true;
+            this.addMasterButton.Click += new System.EventHandler(this.devButton_Click);
             // 
             // addOrderButton
             // 
@@ -136,6 +136,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(409, 498);
             this.panel3.TabIndex = 2;
+            // 
+            // successLabel
+            // 
+            this.successLabel.AutoSize = true;
+            this.successLabel.ForeColor = System.Drawing.Color.Green;
+            this.successLabel.Location = new System.Drawing.Point(14, 373);
+            this.successLabel.Name = "successLabel";
+            this.successLabel.Size = new System.Drawing.Size(0, 13);
+            this.successLabel.TabIndex = 14;
             // 
             // label6
             // 
@@ -272,15 +281,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Название товара";
             // 
-            // successLabel
-            // 
-            this.successLabel.AutoSize = true;
-            this.successLabel.ForeColor = System.Drawing.Color.Green;
-            this.successLabel.Location = new System.Drawing.Point(14, 373);
-            this.successLabel.Name = "successLabel";
-            this.successLabel.Size = new System.Drawing.Size(0, 13);
-            this.successLabel.TabIndex = 14;
-            // 
             // mainWindowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,7 +305,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button updateButton;
-        private System.Windows.Forms.Button devButton;
+        private System.Windows.Forms.Button addMasterButton;
         private System.Windows.Forms.Button addOrderButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListBox orderListBox;

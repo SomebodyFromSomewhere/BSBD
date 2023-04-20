@@ -239,5 +239,11 @@ namespace BSBD
         {
             update(orderListBox.SelectedIndex);
         }
+
+        private void changeMethodsButton_Click(object sender, EventArgs e)
+        {
+            changeMethodsForm methodsForm = new changeMethodsForm();
+            methodsForm.ShowDialog();
+        }
     }
 }
